@@ -1,0 +1,742 @@
+:root {
+    --yell: #FEA116;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9)0%, rgba(0, 0, 0, 0.9)100%), url("../photos/main-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: COVER;
+}
+
+
+/* for gap letter spacing in px */
+
+nav h2,
+nav i {
+    color: var(--yell);
+    padding: 5px 10px;
+    font-size: 3rem;
+}
+
+nav {}
+
+.inner {
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 20px;
+}
+
+
+/* Flex property section here in commonality All the best try devs;) */
+
+nav,
+nav ul,
+.sec1_p2,
+.sec2 .inner,
+.top,
+.bottom,
+.sec3 .inner,
+.box_sec,
+.box_sec3,
+.box_sec3 .div48,
+.con4,
+.con4 .div30,
+.con4-part,
+.con4-mainn,
+.con4-main,
+.sec5 .innerr,
+.div50 .inner,
+.s6-cards,
+.name-card,
+.sec7-con,
+.footr-con,
+footer .bottom,
+footer .bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: black; */
+}
+
+nav ul li {
+    list-style: none;
+    /* display: inline-block; */
+    padding: 50px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* background-color: gray; */
+    color: white;
+    text-align: right;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#key_nav {
+    color: var(--yell);
+}
+
+
+/* button {
+width: 120px;
+margin-top: 30px;
+height: 45px;
+background-color: #FEAF39;
+} */
+
+.nav_button,
+.navv_button {
+    /* padding: 20px 30px; */
+    width: 200px;
+    margin-top: 24px;
+    height: 65px;
+    background-color: var(--yell);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sec1_p2 {
+    width: 100%;
+    align-items: center;
+}
+
+.Brazil {
+    display: none;
+}
+
+.sec1_p2 h1 {
+    font-size: 4rem;
+    /* margin-top: 10vh; */
+    padding: 80px 0 20px 0;
+    color: white;
+    font-family: "Dancing Script", cursive;
+}
+
+.sec1_p2 p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    /* margin-bottom: 5vh; */
+    padding-bottom: 40px;
+}
+
+.div48 {
+    width: 48%;
+    /* background-color: red; */
+}
+
+.div48 img {
+    width: 100%;
+}
+
+.left {
+    width: 40%;
+    padding: 20px 0;
+    /* background-color: gray; */
+}
+
+.right {
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+
+/* sec 2 */
+
+.sec2 {
+    width: 100%;
+    background-color: #f5f5f5f5;
+    padding: 40px 0;
+}
+
+.cards {
+    width: 24%;
+    padding: 70px 20px;
+    background-color: #fff;
+    line-height: 2;
+    margin: 80px 0;
+    /* transition-duration: 2ms; */
+    /* border-radius: 20px; */
+}
+
+.cards h2 {
+    font-size: 1.6rem;
+}
+
+.cards p {
+    font-size: 1rem;
+}
+
+.cards i {
+    color: var(--yell);
+    margin-bottom: 40px;
+    font-size: 80px;
+}
+
+.sec2 .cards:hover i,
+.sec2 .cards:hover {
+    background-color: var(--yell);
+    color: #fff;
+    transition-duration: .5s;
+}
+
+
+/* sec3 */
+
+button:hover {
+    transition-duration: .3s;
+    background-color: #A7171A;
+    transform: scale(1.01);
+}
+
+.sec3,
+.sec4,
+.sec5,
+.sec6,
+.sec7 {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.pics,
+.sec3-cont,
+.b-img,
+.s-img {
+    width: 48%;
+}
+
+.b-img:hover,
+.s-img:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+
+.b-img img,
+.top,
+.bottom {
+    width: 100%;
+}
+
+.s-img img {
+    width: 80%;
+    /* height: 300px; */
+}
+
+.div48 .div48 h2 {
+    font-size: 2rem;
+}
+
+.div48 .div48 h6 {
+    font-size: 1.3rem;
+}
+
+.top {
+    align-items: end;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+.sec3 .inner .pics {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+    /* justify-content: space-between; */
+}
+
+.sec3-cont {
+    padding: 50px 0;
+    /* why padding in % affect whole stuff */
+    /* background-color: green; */
+    line-height: 1.5;
+}
+
+.sec3-cont h2 {
+    font-size: 3rem;
+    font-family: Lobster;
+    font-weight: lighter;
+}
+
+.sec3-cont h3 {
+    font-size: 1rem;
+    font-family: "Pacifico", cursive;
+    color: var(--yell);
+}
+
+.sec3-cont .box_sec3 h3 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sec3-cont p {
+    line-height: 1.6;
+    color: grey;
+    margin-top: 20px;
+}
+
+.box_sec3 {
+    margin: 40px 0;
+}
+
+.num {
+    color: var(--yell);
+    font-size: 4rem;
+    border-left: 10px solid var(--yell);
+}
+
+.mr {
+    margin-left: 20px;
+}
+
+.bottom .s-img {
+    text-align: right;
+}
+
+
+/* .bottom .s-img {
+display: flex;
+justify-content: end;
+align-content: flex-start !important;
+flex-wrap: wrap;
+} */
+
+.sec4-heads {
+    text-align: center;
+}
+
+.sec4-heads .pi {
+    color: var(--yell);
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+}
+
+.sec4-heads h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.con4 {
+    width: 40%;
+    margin: 40px auto;
+    /* padding: 40px 0; */
+    /* background-color: #A7171A; */
+    padding-bottom: 10px;
+    border-bottom: .1px solid gray;
+}
+
+.div30 {
+    width: 30%;
+    /* background-color: #FEA116; */
+}
+
+.con4 i {
+    color: var(--yell);
+    /* padding: 10px 10px; */
+    font-size: 2.5rem;
+}
+
+.con4-part {
+    width: 100%;
+    margin-top: 20px;
+    align-content: space-between;
+}
+
+.pic {
+    width: 10%;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.con4-txt {
+    width: 87%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.lefty {
+    text-align: left;
+}
+
+.righty {
+    text-align: right;
+    padding-left: 40px;
+}
+
+.con4-mainn {
+    width: 80%;
+    padding-bottom: 10px;
+    border-bottom: .2px solid;
+}
+
+.div50 {
+    width: 50%;
+}
+
+#txt {
+    color: var(--yell);
+    width: 10%;
+}
+
+.con4-txt {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+
+/* sec5 */
+
+.sec5 .innerr h2 {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.sec5 .innerr .div500 {
+    width: 50%;
+    background-image: url("../photos/formm.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 80vh; */
+}
+
+form {
+    background-color: #0F172B;
+    padding: 40px 20px;
+}
+
+form input {
+    width: 95%;
+    height: 70px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+
+form h2,
+footer b {
+    color: var(--yell);
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+form h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.button-form {
+    width: 100%;
+    background-color: var(--yell);
+    color: white;
+    height: 80px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.sec6 {
+    width: 100%;
+    /* margin: 0% auto; */
+    text-align: center;
+    background-color: #f5f5f5f5;
+}
+
+.sec6 .pics {
+    width: 90%;
+    margin: 0% auto;
+}
+
+.sec6 .pics:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+
+.sec6-head {
+    text-align: center;
+    line-height: 2;
+}
+
+.sec6-head h3,
+.txt p {
+    color: var(--yell);
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.sec6-head h2,
+.txt h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
+}
+
+.s6-cards .cardss .pics img {
+    width: 100%;
+    border-radius: 100%;
+    /* margin: 0 auto; */
+}
+
+.s6-cards .cardss {
+    width: 22%;
+    /* text-align: center; */
+    background-color: white;
+    padding: 40px 10px;
+}
+
+.cardss b {
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+.s6-cards {
+    text-align: center;
+}
+
+
+/* sec 7 */
+
+.sec7 {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.txt {
+    text-align: center;
+    line-height: 2;
+}
+
+.name-card {
+    width: 100%;
+}
+
+.name-card-pic {
+    width: 18%;
+}
+
+.name-card-pic img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.name-card-con {
+    width: 75%;
+    line-height: 1;
+    text-transform: capitalize
+}
+
+.sec7-con .div30 {
+    border: .1px solid grey;
+    padding: 20px 0;
+}
+
+.sec7-con .div30 i {
+    color: var(--yell);
+    font-size: 60px;
+}
+
+.sec7-con .div30 p {
+    margin: 20px 0;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+
+/* footr */
+
+footer {
+    width: 100%;
+    background-color: #0F172B;
+    font-size: 1.5rem;
+}
+
+footer .cards {
+    background-color: #0F172B;
+    color: aliceblue;
+}
+
+.footr-con {
+    border-bottom: 1px solid #fff;
+}
+
+.footr-con ul li {
+    list-style: none;
+}
+
+footer .bottom {
+    color: #fff;
+}
+
+footer .bottom ul li {
+    list-style: none;
+    padding: 2px 0;
+    text-transform: uppercase;
+    border-right: .1 solid black;
+}
+
+footer .cards i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.cards input {
+    width: 70%;
+    height: 40px;
+    border: none;
+    padding: 0 20px;
+}
+
+footer i {
+    color: var(--yell);
+}
+
+.cards button {
+    height: 40px;
+    width: 20%;
+    border: none;
+    background-color: var(--yell);
+    color: #fff;
+}
+
+.for {
+    width: 100%;
+    background-color: #fff;
+    /* padding: 20px 0; */
+}
+
+.cards ul li {
+    text-transform: capitalize;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .inner {
+        width: 92%;
+    }
+    .left {
+        width: 30%;
+    }
+    .right {
+        width: 70%;
+    }
+    html {
+        font-size: 15px;
+    }
+    .navv_button {
+        /* padding: 20px 30px; */
+        width: 180px;
+        margin-top: 25px;
+        height: 55px;
+        color: white;
+    }
+    header {
+        height: 70vh;
+    }
+    nav h2 {
+        font-size: 2rem;
+    }
+    .box_sec3 .div48 h2 {
+        font-size: 1.7rem;
+    }
+    .box_sec3 {
+        width: 100%;
+    }
+    .con4 {
+        width: 50%;
+    }
+    .bottom .div30 {
+        width: 40%;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 20px;
+    }
+    nav ul {
+        display: none;
+    }
+    .Brazil {
+        display: block;
+        margin-top: 20px;
+    }
+    .inner {
+        width: 90%;
+    }
+    header {
+        height: 200vh;
+    }
+    .sec1_p2 {
+        text-align: center;
+    }
+    .sec1_p2 .div48 {
+        margin-bottom: 40px;
+    }
+    .cards,
+    .sec6 .cardss,
+    .name-card,
+    .bottom .div30,
+    .sec7-con .div30,
+    .con4,
+    .div50,
+    .pics,
+    .sec3-cont,
+    .sec1_p2 .div48 {
+        width: 100%;
+    }
+    .con4-mainn .div50,
+    .left {
+        width: 50%;
+    }
+    .right {
+        width: 20%;
+    }
+    .sec2 .cards {
+        width: 48%;
+    }
+    /* i,
+    #key_nav {
+        font-size: 10px;
+    } */
+    .con4 .div30 {
+        width: 31%;
+    }
+    .sec7-con {
+        text-align: center;
+    }
+    .bottom .div30,
+    .sec7-con .div30 {
+        margin-top: 30px;
+    }
+}
