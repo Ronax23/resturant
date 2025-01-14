@@ -1,7 +1,7 @@
 :root {
     --yell: #FEA116;
 }
-
+/* 450 px */
 * {
     padding: 0;
     margin: 0;
@@ -9,13 +9,13 @@
 }
 
 html {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
 }
 
 header {
     width: 100%;
-    height: 100vh;
+    padding-bottom: 10%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9)0%, rgba(0, 0, 0, 0.9)100%), url("../photos/main-bg.jpeg");
     background-repeat: no-repeat;
     background-size: COVER;
@@ -30,8 +30,6 @@ nav i {
     padding: 5px 10px;
     font-size: 3rem;
 }
-
-nav {}
 
 .inner {
     margin: 0 auto;
@@ -80,6 +78,7 @@ nav ul li {
     /* background-color: gray; */
     color: white;
     text-align: right;
+    /* margin: 0 2px; */
 }
 
 ul li a {
@@ -102,13 +101,14 @@ background-color: #FEAF39;
 .nav_button,
 .navv_button {
     /* padding: 20px 30px; */
-    width: 200px;
+    width: 180px;
     margin-top: 24px;
-    height: 65px;
+    height: 55px;
     background-color: var(--yell);
     font-weight: 500;
     font-size: 1.2rem;
     color: white;
+    border: none;
     text-transform: uppercase;
 }
 
@@ -126,7 +126,7 @@ background-color: #FEAF39;
     /* margin-top: 10vh; */
     padding: 80px 0 20px 0;
     color: white;
-    font-family: "Dancing Script", cursive;
+    /* font-family: "Dancing Script", cursive; */
 }
 
 .sec1_p2 p {
@@ -168,7 +168,7 @@ background-color: #FEAF39;
 
 .cards {
     width: 24%;
-    padding: 70px 20px;
+    padding: 30px 20px;
     background-color: #fff;
     line-height: 2;
     margin: 80px 0;
@@ -202,7 +202,7 @@ background-color: #FEAF39;
 
 button:hover {
     transition-duration: .3s;
-    background-color: #A7171A;
+    background-color: #f3b64e;
     transform: scale(1.01);
 }
 
@@ -212,9 +212,16 @@ button:hover {
 .sec6,
 .sec7 {
     width: 100%;
-    padding: 50px 0;
+    background-color: #f5f5f5f5;
 }
-
+.sec3 .inner,
+.sec4 .inner,
+.sec5 .innerr,
+.sec6 .inner,
+.sec7 .inner
+{
+    padding: 20px 0;
+}
 .pics,
 .sec3-cont,
 .b-img,
@@ -299,7 +306,7 @@ button:hover {
 .num {
     color: var(--yell);
     font-size: 4rem;
-    border-left: 10px solid var(--yell);
+    border-left: 5px solid var(--yell);
 }
 
 .mr {
@@ -436,8 +443,9 @@ form textarea {
     width: 100%;
     height: 100px;
     margin-bottom: 40px;
-    padding-left: 20px;
+    padding:20px 0 0 20px;
     text-transform: capitalize;
+    color: rgb(170, 156, 156);
 }
 
 form h2,
@@ -450,7 +458,7 @@ footer b {
 
 form h1 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .button-form {
@@ -526,7 +534,7 @@ form h1 {
 
 .sec7 {
     width: 100%;
-    margin: 20px auto;
+    padding: 80px 0;
 }
 
 .txt {
@@ -594,6 +602,7 @@ footer .cards {
 }
 
 footer .bottom {
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -660,9 +669,6 @@ footer i {
         height: 55px;
         color: white;
     }
-    header {
-        height: 70vh;
-    }
     nav h2 {
         font-size: 2rem;
     }
@@ -682,7 +688,7 @@ footer i {
 
 @media (max-width:768px) {
     html {
-        font-size: 20px;
+        font-size: 16px;
     }
     nav ul {
         display: none;
@@ -692,10 +698,7 @@ footer i {
         margin-top: 20px;
     }
     .inner {
-        width: 90%;
-    }
-    header {
-        height: 200vh;
+        width: 89%;
     }
     .sec1_p2 {
         text-align: center;
@@ -704,16 +707,21 @@ footer i {
         margin-bottom: 40px;
     }
     .cards,
-    .sec6 .cardss,
     .name-card,
     .bottom .div30,
-    .sec7-con .div30,
     .con4,
     .div50,
     .pics,
     .sec3-cont,
     .sec1_p2 .div48 {
         width: 100%;
+    }
+
+
+     .sec5 .innerr .div500,.sec5 .innerr .div50
+    {
+        width: 50%;
+        height: 116vh;
     }
     .con4-mainn .div50,
     .left {
@@ -722,8 +730,9 @@ footer i {
     .right {
         width: 20%;
     }
-    .sec2 .cards {
+    .sec2 .cards,    .sec6 .cardss,footer .cards {
         width: 48%;
+        margin-top: 40px;
     }
     /* i,
     #key_nav {
@@ -735,8 +744,30 @@ footer i {
     .sec7-con {
         text-align: center;
     }
+    .con4-mainn
+    {
+        width: 100%;
+    }
     .bottom .div30,
     .sec7-con .div30 {
         margin-top: 30px;
+    }
+    .cards
+    {
+        margin: 20px 0;
+    }
+}
+@media (max-width:576px)
+{
+    html
+    {
+        font-size: 13px;
+    }
+    .sec2 .cards,.sec5 .innerr .div500,.sec5 .innerr .div50,.s6-cards .cardss,.sec7-con .div30,.footr-con .cards
+    ,.box_sec3 .s3-ar
+    {
+        width: 100%;
+        /* normal card class failed why?
+        error in this too .box_sec3 .div48 */
     }
 }
