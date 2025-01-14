@@ -144,6 +144,19 @@ background-color: #FEAF39;
 
 .div48 img {
     width: 100%;
+    animation: rot 30s linear infinite;
+}
+
+@keyframes rot
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
 }
 
 .left {
@@ -168,10 +181,10 @@ background-color: #FEAF39;
 
 .cards {
     width: 24%;
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
     background-color: #fff;
     line-height: 2;
-    margin: 80px 0;
+    margin: 40px 0;
     /* transition-duration: 2ms; */
     /* border-radius: 20px; */
 }
@@ -423,6 +436,7 @@ flex-wrap: wrap;
     width: 50%;
     background-image: url("../photos/formm.jpeg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     /* height: 80vh; */
 }
@@ -504,7 +518,7 @@ form h1 {
 .txt h1 {
     font-size: 2.5em;
     letter-spacing: 2px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .s6-cards .cardss .pics img {
@@ -534,7 +548,6 @@ form h1 {
 
 .sec7 {
     width: 100%;
-    padding: 80px 0;
 }
 
 .txt {
@@ -757,11 +770,11 @@ footer i {
         margin: 20px 0;
     }
 }
-@media (max-width:576px)
+@media (max-width:308px)
 {
     html
     {
-        font-size: 13px;
+        font-size: 10px;
     }
     .sec2 .cards,.sec5 .innerr .div500,.sec5 .innerr .div50,.s6-cards .cardss,.sec7-con .div30,.footr-con .cards
     ,.box_sec3 .s3-ar
@@ -770,4 +783,30 @@ footer i {
         /* normal card class failed why?
         error in this too .box_sec3 .div48 */
     }
+    .left
+    {
+        width: 60%;
+    }
+    .sec3 .inner,
+.sec4 .inner,
+.sec5 .innerr,
+.sec6 .inner,
+.sec7 .inner,.sec6-head h2
+{
+    padding: 8px 0;
+    margin: 0 auto;
+}
+.sec3-cont h2
+{
+    font-size: 2.7rem;
+}
+
+.s3-ar
+{
+    margin-top: 20px;
+}
+.box_sec3 .div48 h2
+{
+    font-size: 2rem;
+}
 }
