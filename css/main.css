@@ -144,7 +144,7 @@ background-color: #FEAF39;
 
 .div48 img {
     width: 80%;
-    animation: rot .01s linear infinite;
+    animation: rot 30s linear infinite;
 }
 
 @keyframes rot
