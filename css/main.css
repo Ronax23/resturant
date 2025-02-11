@@ -1,5 +1,8 @@
 :root {
     --yell: #FEA116;
+    --hov:#f3b64e;
+    --ps-width:44px;
+    --ps-height: 2.2px;
 }
 /* 450 px */
 * {
@@ -20,10 +23,16 @@ header {
     background-repeat: no-repeat;
     background-size: COVER;
 }
-
-
 /* for gap letter spacing in px */
-
+nav
+{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    opacity: .9;
+    /* margin: 0 auto; */
+    z-index: 1;
+}
 nav h2,
 nav i {
     color: var(--yell);
@@ -34,13 +43,13 @@ nav i {
 .inner {
     margin: 0 auto;
     width: 90%;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 
 /* Flex property section here in commonality All the best try devs;) */
 
-nav,
+nav .inner,
 nav ul,
 .sec1_p2,
 .sec2 .inner,
@@ -60,7 +69,7 @@ nav ul,
 .s6-cards,
 .name-card,
 .sec7-con,
-.footr-con,
+.footr-con,.div100,
 footer .bottom,
 footer .bottom ul {
     display: flex;
@@ -72,7 +81,7 @@ footer .bottom ul {
 nav ul li {
     list-style: none;
     /* display: inline-block; */
-    padding: 50px 0;
+    padding: 45px 0 10px 0;
     font-weight: bold;
     text-transform: uppercase;
     /* background-color: gray; */
@@ -115,6 +124,7 @@ background-color: #FEAF39;
 .sec1_p2 {
     width: 100%;
     align-items: center;
+    padding-top: 200px;
 }
 
 .Brazil {
@@ -161,7 +171,7 @@ background-color: #FEAF39;
 
 .left {
     width: 40%;
-    padding: 20px 0;
+    padding: 15px 0 10px 0;
     /* background-color: gray; */
 }
 
@@ -215,7 +225,7 @@ background-color: #FEAF39;
 
 button:hover {
     transition-duration: .3s;
-    background-color: #f3b64e;
+    background-color: var(--hov);
     transform: scale(1.01);
 }
 
@@ -296,9 +306,20 @@ button:hover {
 }
 
 .sec3-cont h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Pacifico", cursive;
     color: var(--yell);
+    position: relative;
+}
+.sec3-cont h3::after
+{
+    content: "";
+    margin-left: 10px;
+    top: 50%;
+    width: var(--ps-width);
+    height: var(--ps-height);
+    background-color: var(--yell);
+    position: absolute;
 }
 
 .sec3-cont .box_sec3 h3 {
@@ -319,9 +340,17 @@ button:hover {
 .num {
     color: var(--yell);
     font-size: 4rem;
-    border-left: 5px solid var(--yell);
+    position: relative;
 }
-
+.num::before
+{
+    position: absolute;
+    width: 5px;
+    background-color: var(--yell);
+    content: "";
+    height: 100%;
+    left: -20px;
+}
 .mr {
     margin-left: 20px;
 }
@@ -346,7 +375,30 @@ flex-wrap: wrap;
     color: var(--yell);
     font-family: "Pacifico", cursive;
     font-size: 1.5rem;
+    position: relative;
 }
+.sec4-heads .pi::before
+{
+    position: absolute;
+    background-color: var(--yell);
+    width: var(--ps-width);
+    height: var(--ps-height);
+    content: "";
+    margin-left: -40px;
+    top: 50%;
+}
+
+.sec4-heads .pi::after
+{
+    position: absolute;
+    background-color: var(--yell);
+    width: var(--ps-width);
+    height: var(--ps-height);
+    content: "";
+    margin-right: 20px;
+    top: 50%;
+}
+
 
 .sec4-heads h1 {
     font-size: 3rem;
@@ -430,8 +482,18 @@ flex-wrap: wrap;
 .sec5 .innerr h2 {
     width: 100%;
     margin-top: 40px;
+    position: relative;
 }
-
+.sec5 .innerr h2::after
+{
+    position: absolute;
+    background-color: var(--yell);
+    width: var(--ps-width);
+    height: var(--ps-height);
+    content: "";
+    margin-left: 10px;
+    top: 50%;
+}
 .sec5 .innerr .div500 {
     width: 50%;
     background-image: url("../photos/formm.jpeg");
@@ -444,6 +506,9 @@ flex-wrap: wrap;
 form {
     background-color: #0F172B;
     padding: 40px 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 form input {
@@ -504,6 +569,24 @@ form h1 {
 .sec6-head {
     text-align: center;
     line-height: 2;
+    position: relative;
+}
+.sec6-head h3::before,.sec6-head h3::after
+{
+    position: absolute;
+    background-color: var(--yell);
+    width: var(--ps-width);
+    height: var(--ps-height);
+    content: "";
+    top: 18%;
+}
+.sec6-head h3::before
+{
+    margin-left: -60px;
+}
+.sec6-head h3::after
+{
+    margin-left: 25px;
 }
 
 .sec6-head h3,
@@ -553,6 +636,30 @@ form h1 {
 .txt {
     text-align: center;
     line-height: 2;
+}
+.sec7 .inner .txt p
+{
+    position: relative;
+    /* background:rebeccapurple; */
+    display: inline-block;
+}
+.sec7 .inner .txt p::before,.sec7 .inner .txt p::after
+{
+    position: absolute;
+    background-color: var(--yell);
+    width: var(--ps-width);
+    height: var(--ps-height);
+    content: "";
+    top: 50%;
+    transform: translateX(-50%);
+}
+.sec7 .inner .txt p::before
+{
+    left: -50px;
+}
+.sec7 .inner .txt p::after
+{
+    right: -100px;
 }
 
 .name-card {
@@ -618,7 +725,13 @@ footer .bottom {
     font-size: 1rem;
     color: #fff;
 }
-
+.confidante
+{
+    border-left: 1px solid white;
+    /* opacity: .6; */
+    /* margin: 20px; */
+    padding: 0 0 0 18px;
+}
 footer .bottom ul li {
     list-style: none;
     padding: 2px 0;
@@ -626,12 +739,41 @@ footer .bottom ul li {
     border-right: .1 solid black;
 }
 
-footer .cards i {
-    font-size: 20px;
-    margin-right: 10px;
-    color: white;
+footer .cards b
+{
+    position: relative;
+}
+footer .cards b::after
+{
+    content: "";
+    height: var(--ps-height);
+    width: var(--ps-width);
+    position: absolute;
+    background-color: var(--yell);
+    top: 50%;
+    margin-left: 18px;
 }
 
+footer .cards i {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: white;
+
+}
+footer .cards .ico i
+{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+footer .cards .ico i:hover
+{
+    background-color: white;
+    color: var(--yell);
+    transition-duration: .4s;
+    cursor: pointer;
+}
 .cards input {
     width: 70%;
     height: 40px;
@@ -644,8 +786,8 @@ footer i {
 }
 
 .cards button {
-    height: 40px;
-    width: 20%;
+    height: 60px;
+    width: 27%;
     border: none;
     background-color: var(--yell);
     color: #fff;
@@ -661,7 +803,69 @@ footer i {
     text-transform: capitalize;
     color: white;
 }
-
+@media (max-width:2560px)
+{
+    html
+    {
+        font-size: 30px;
+    }
+    .nav_button,.navv_button
+    {
+        width: 280px;
+        height: 80px;
+    }
+    .cards button
+    {
+        height: 108px;
+    }
+}
+@media (max-width:1440px)
+{
+    html
+    {
+        font-size: 18px;
+    }
+    .nav_button,.navv_button
+    {
+        width: 180px;
+        height: 60px;
+    }
+    .cards button
+    {
+        height: 63px;
+    }
+}
+@media (max-width:1920px)
+{
+    html {
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .cards button
+    {
+        height: 54px;
+    }
+    .navv_button
+    {
+        width: 180px;
+        height: 60px;
+    }
+}
+@media (max-width:1024px)
+{
+    html 
+    {
+        font-size: 12px;
+    }
+    .cards button
+    {
+        height: 41px;
+    }
+    .navv_button
+    {
+        display: none;
+    }
+}
 @media (max-width: 992px) {
     .inner {
         width: 92%;
@@ -729,12 +933,15 @@ footer i {
     .sec1_p2 .div48 {
         width: 100%;
     }
-
+    .sec7-con .div30
+    {
+        padding: 0;
+    }
 
      .sec5 .innerr .div500,.sec5 .innerr .div50
     {
         width: 50%;
-        height: 116vh;
+        height: 67vh;
     }
     .con4-mainn .div50,
     .left {
@@ -743,9 +950,18 @@ footer i {
     .right {
         width: 20%;
     }
-    .sec2 .cards,    .sec6 .cardss,footer .cards {
+    .sec2 .cards,    .sec6 .cardss {
         width: 48%;
         margin-top: 40px;
+    }
+    footer .cards
+    {
+        margin:0;
+        width: 48%;
+    }
+    footer ul
+    {
+        font-size: 1rem;
     }
     /* i,
     #key_nav {
@@ -776,8 +992,12 @@ footer i {
     {
         font-size: 10px;
     }
+    .sec1_p2
+    {
+        padding-top: 100px;
+    }
     .sec2 .cards,.sec5 .innerr .div500,.sec5 .innerr .div50,.s6-cards .cardss,.sec7-con .div30,.footr-con .cards
-    ,.box_sec3 .s3-ar
+    ,.box_sec3
     {
         width: 100%;
         /* normal card class failed why?
@@ -796,6 +1016,10 @@ footer i {
     padding: 8px 0;
     margin: 0 auto;
 }
+.box_sec3 .div48
+{
+    justify-content: start;
+}
 .sec3-cont h2
 {
     font-size: 2.7rem;
@@ -809,8 +1033,16 @@ footer i {
 {
     font-size: 2rem;
 }
+#med
+{
+    width: 20%;
+}
 .cards i
 {
     font-size: 40px;
+}
+b
+{
+    margin-bottom: 10px;
 }
 }
