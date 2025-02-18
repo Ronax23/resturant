@@ -941,7 +941,10 @@ footer i {
      .sec5 .innerr .div500,.sec5 .innerr .div50
     {
         width: 50%;
-        height: 67vh;
+        height: 65vh;
+    }
+    .cards button {
+        height: 54px;
     }
     .con4-mainn .div50,
     .left {
