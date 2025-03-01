@@ -775,7 +775,7 @@ footer .cards .ico i:hover
     cursor: pointer;
 }
 .cards input {
-    width: 70%;
+    width: 69%;
     height: 40px;
     border: none;
     padding: 0 20px;
@@ -803,7 +803,7 @@ footer i {
     text-transform: capitalize;
     color: white;
 }
-@media (max-width:2560px)
+/* @media (max-width:2560px)
 {
     html
     {
@@ -850,7 +850,7 @@ footer i {
         width: 180px;
         height: 60px;
     }
-}
+} */
 @media (max-width:1024px)
 {
     html 
@@ -890,7 +890,7 @@ footer i {
         font-size: 2rem;
     }
     .box_sec3 .div48 h2 {
-        font-size: 1.7rem;
+        font-size: 1.55rem;
     }
     .box_sec3 {
         width: 100%;
@@ -900,6 +900,9 @@ footer i {
     }
     .bottom .div30 {
         width: 40%;
+    }
+    footer .cards .ico i {
+        padding: 7px;
     }
 }
 
@@ -941,7 +944,7 @@ footer i {
      .sec5 .innerr .div500,.sec5 .innerr .div50
     {
         width: 50%;
-        height: 65vh;
+        height: 67.5vh;
     }
     .cards button {
         height: 54px;
@@ -965,6 +968,7 @@ footer i {
     footer ul
     {
         font-size: 1rem;
+        margin-bottom: 30px;
     }
     /* i,
     #key_nav {
@@ -989,7 +993,7 @@ footer i {
         margin: 20px 0;
     }
 }
-@media (max-width:451px) and (min-width:320px)
+@media (max-width:451px)
 {
     html
     {
