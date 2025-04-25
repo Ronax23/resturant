@@ -562,7 +562,7 @@ flex-wrap: wrap;
 
 form {
     background-color: #0F172B;
-    padding: 40px 20px;
+    padding: 27px 20px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -797,7 +797,14 @@ footer .bottom ul li {
     text-transform: uppercase;
     border-right: .1 solid black;
 }
-
+footer .cards ul li a
+{
+    margin-left: 10px;
+}
+footer .cards ul li::marker
+{
+    content: ">";
+}
 footer .cards b
 {
     position: relative;
@@ -934,6 +941,10 @@ gap:0;
     font-family: helvetica,sans-serif;
     line-height: 2;
     letter-spacing: 2;
+}
+.sec5 .innerr
+{
+    padding: 0;
 }
 @media (max-width:2560px)
 {
@@ -1125,7 +1136,7 @@ gap:0;
 {
     html
     {
-        font-size: 10px;
+        font-size: 14px;
     }
     .sec1_p2
     {
@@ -1144,7 +1155,6 @@ gap:0;
     }
     .sec3 .inner,
 .sec4 .inner,
-.sec5 .innerr,
 .sec6 .inner,
 .sec7 .inner,.sec6-head h2
 {
