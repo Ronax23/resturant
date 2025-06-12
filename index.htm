@@ -20,6 +20,8 @@
 </head>
 
 <body>
+
+    
     <header>
         <nav>
            <div class="inner">
@@ -28,8 +30,8 @@
 
                 <h2> <i class="fa fa-utensils me-3"></i>BiteBuzz</h2>
             </section>
-            <section class="right">
-                <ul>
+            
+                <ul class="right">
                     <li><a href="index.htm" id="key_nav">home</a></li>
                     <li><a href="abous.htm">about</a></li>
                     <li><a href="service.htm">service</a></li>
@@ -40,8 +42,8 @@
                     <!-- <li class="nav_button"><a href="#">Book a table</a></li> -->
 
                 </ul>
-                <i class="Brazil fa-solid fa-bars"></i>
-            </section>
+               
+             <i class="Brazil fa-solid fa-bars"></i>
            </div>
         </nav>
         <section class="inner">
@@ -120,7 +122,7 @@
                 <section class="box_sec3">
                     <section class="div48 s3-ar">
                         <section class="div48">
-                            <h1 class="num"> 25</h1>
+                            <h1 class="num" data-count="15"> 15</h1>
                         </section>
                         <section class="div48" id="med">
                             <h6>Years of</h6>
@@ -129,7 +131,7 @@
                     </section>
                     <section class="div48 s3-ar">
                         <section class="div48">
-                            <h1 class="num">25</h1>
+                            <h1 class="num" data-count="50">50</h1>
                         </section>
                         <section class="div48" id="med">
                             <h6>Years of</h6>
@@ -321,29 +323,29 @@
                 <!-- <img src="photos/formm.jpeg" alt=""> -->
             </section>
             <section class="div50">
-                <form action="">
+                <form action="" id="contact-form">
                     <section class="inner">
                         <h2>Reservation</h2>
                         <h1>Book A Table Online</h1>
                     </section>
                     <section class="inner">
                         <section class="div48">
-                            <input type="text" name="" id="" placeholder="Name">
+                            <input type="text" name="" id="name-form" placeholder="Name">
                         </section>
                         <section class="div48">
-                            <input type="text" placeholder="Email">
+                            <input type="email" id="email-form" placeholder="Email">
                         </section>
                     </section>
                     <section class="inner">
                         <section class="div48">
-                            <input type="text" name="" id="" placeholder="Date & Time">
+                            <input type="date" name="" id="date-form" placeholder="Date">
                         </section>
                         <section class="div48">
-                            <input type="text" placeholder="No of People">
+                            <input type="number" id="number-form" placeholder="No of People">
                         </section>
                     </section>
-                    <section class="inner"> <textarea name="" id="">special request</textarea>
-                        <button class="button-form">book now</button></section>
+                    <section class="inner"> <textarea name="" id="textarea-form" placeholder="special request"></textarea>
+                        <button class="button-form" type="submit">book now</button></section>
                 </form>
             </section>
         </section>
@@ -486,7 +488,7 @@
                     <p>Live Music</p>
                     <p>Enjoy live music performances every Friday night starting at 8 PM</p>
                     <section class="for">
-                        <input type="text" placeholder="Your Email"> <button>Signup</button></input>
+                        <input type="text" id="footer_email" placeholder="Your Email"> <button>Signup</button></input>
 
                     </section>
                 </section>
@@ -507,6 +509,12 @@
             </section>
         </section>
     </footer>
+
+
+    <script src="js/mod.js">
+    </script>
+
+
 </body>
 
 </html>

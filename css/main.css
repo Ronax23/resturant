@@ -574,6 +574,10 @@ form input {
     border-radius: 5px;
     padding-left: 20px;
 }
+.for input:focus
+{
+    border: none;
+}
 
 form textarea {
     width: 100%;
@@ -846,6 +850,11 @@ footer .cards .ico i:hover
     border: none;
     padding: 0 20px;
 }
+.cards input:focus 
+{
+     border: none;
+  outline: none;
+}
 
 footer i {
     color: var(--yell);
@@ -933,11 +942,14 @@ gap:0;
 {
     margin: 20px 0;
 }
+#terms h1{
+    font-size: 3rem;
+}
 #terms p 
 {
     margin: 0 auto;
     width: 60%;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: helvetica,sans-serif;
     line-height: 2;
     letter-spacing: 2;
@@ -1050,8 +1062,27 @@ gap:0;
     html {
         font-size: 16px;
     }
-    nav ul {
-        display: none;
+    nav .right {
+       transform: translateX(100%);
+       flex-direction: column;
+       display: flex;
+       position: fixed;
+       width: 100%;
+       top: 80px;
+       transition-duration: .5s;
+       background-color: black;
+       opacity: .9;
+       height: 100vh;
+       justify-content: start;
+       
+    }
+    nav ul li 
+    {
+        text-align: center;
+    }
+    .navmov 
+    {
+        transform: translateX(0%) !important;
     }
     .Brazil {
         display: block;
@@ -1204,4 +1235,14 @@ b
     left: 51px;
     top: 13px;
 }
+}
+@media (max-width:320px) {
+    nav h2,nav i {
+        font-size: 1.7rem;
+    }
+        nav .right 
+        {
+            top: 70px;
+        }
+
 }
