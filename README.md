@@ -1,5 +1,3 @@
-# resturant
-
 # 🍽️ Responsive Restaurant Website (Flexbox + JavaScript)
 
 This is a responsive, interactive restaurant landing page built using **HTML5**, **CSS3 (Flexbox)**, and **JavaScript**. It demonstrates core frontend design patterns and real-world UI logic like counters, form validation, navigation toggle, and menu interaction.
