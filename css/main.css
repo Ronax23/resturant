@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: url("../photos/Pizza\ emoji.cur"), pointer;
 }
 
 html {
@@ -266,8 +267,8 @@ background-color: #FEAF39;
     background-color: #fff;
     line-height: 2;
     margin: 40px 0;
-    /* transition-duration: 2ms; */
-    /* border-radius: 20px; */
+    transition: .5s;
+    border-radius: 10px;
 }
 
 .cards h2 {
@@ -288,14 +289,15 @@ background-color: #FEAF39;
 .sec2 .cards:hover {
     background-color: var(--yell);
     color: #fff;
-    transition-duration: .5s;
 }
 
 
 /* sec3 */
-
+button 
+{
+     transition-duration: .3s;
+}
 button:hover {
-    transition-duration: .3s;
     background-color: var(--hov);
     transform: scale(1.01);
 }
@@ -322,11 +324,14 @@ button:hover {
 .s-img {
     width: 48%;
 }
+.b-img,
+.s-img{
+    transition-duration: .5s;
+}
 
 .b-img:hover,
 .s-img:hover {
     transform: scale(1.1);
-    transition-duration: .5s;
 }
 
 .b-img img,
@@ -637,10 +642,11 @@ form h1 {
     overflow: hidden;
     border-radius: 100%;
 }
-
+.sec6 .pics img {
+    transition-duration: .5s;
+}
 .sec6 .pics:hover img {
     transform: scale(1.1);
-    transition-duration: .5s;
 }
 
 .sec6-head {
@@ -850,13 +856,13 @@ footer .cards .ico i
     padding: 10px;
     border-radius: 100%;
     border: 1px solid white;
+     transition-duration: .4s;
 }
 footer .cards .ico i:hover
 {
     background-color: white;
     color: var(--yell);
-    transition-duration: .4s;
-    cursor: pointer;
+    cursor: url("../photos/Pizza\ emoji.cur"),pointer;
 }
 .cards input {
     width: 70%;
