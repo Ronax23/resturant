@@ -4,6 +4,14 @@
     --ps-width:44px;
     --ps-height: 2.2px;
 }
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: rgba(233, 150, 34, 0.872);
+    border-radius: 100px;
+}
 /* 450 px */
 * {
     padding: 0;
